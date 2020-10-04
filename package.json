@@ -1,0 +1,24 @@
+{
+  "name": "node-hello-world",
+  "version": "1.0.0",
+  "description": "A hello world server-side application powered by NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": ". ./development.env.sh & node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DSC-FPTU-HCMC/node-hello-world.git"
+  },
+  "keywords": [
+    "nodejs",
+    "hello-world"
+  ],
+  "author": "DSC FPTU HCMC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DSC-FPTU-HCMC/node-hello-world/issues"
+  },
+  "homepage": "https://github.com/DSC-FPTU-HCMC/node-hello-world#readme"
+}
