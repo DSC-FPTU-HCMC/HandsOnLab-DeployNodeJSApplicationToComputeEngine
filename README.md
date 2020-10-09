@@ -18,7 +18,7 @@ Prerequisites:
 
 Allow a short time for the instance to start. After the instance is ready, it is listed on the VM instances page with a green status icon.
 
-## STEP 2: Connect to Virtual Machine
+## STEP 2: Connect to the VM
 1. In the Cloud Console, go to the [VM Instances](https://console.cloud.google.com/compute/instances) page.
 1. In the list of virtual machine instances, click **SSH** in the row of the instance that you want to connect to.
 
@@ -46,28 +46,34 @@ git --version
 **What is [GIT](https://www.freecodecamp.org/news/what-is-git-and-how-to-use-it-c341b049ae61/)?**
 GIT is a version control system, a software tool that helps record changes to files by keeping a track of modifications done to the code.
 
-## STEP 4: Clone source code from Github to Virtual Machine
+## STEP 4: Clone source code from Github to the VM
 ```bash
 git clone https://github.com/DSC-FPTU-HCMC/node-hello-world.git
 cd node-hello-world
 ```
 
-## STEP 5: Start your application locally
+## STEP 5: Start your application
 ```bash
+# install the dependencies
+npm install
+
+# start the application
 npm start
 
 # Ctrl C to shutdown
 ```
 
-## STEP 6: Configure NGINX
+## STEP 6: Configure nginx
 ```bash
-sudo apt-get install -y NGINX
+sudo apt-get install -y nginx
 
-# navigate to configuration folder for NGINX
+# navigate to configuration folder for nginx
 cd /etc/nginx/sites-available
+
 # backup your current default file
 sudo mv default default.bak
-# create new NGINX's configuration file
+
+# create new nginx's configuration file
 sudo touch default
 ```
 
@@ -88,15 +94,15 @@ server {
 ```
 
 ```bash
-# restart NGINX
-sudo service NGINX restart
+# restart nginx
+sudo service nginx restart
 
 # start application
 npm start
 ```
 
-**What is [NGINX](https://www.NGINX.com/resources/glossary/NGINX)?**
-NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. ... In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
+**What is [nginx](https://www.nginx.com/resources/glossary/nginx)?**
+nginx is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. ... In addition to its HTTP server capabilities, nginx can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
 
 ## STEP 7: Setup PM2
 ```bash
