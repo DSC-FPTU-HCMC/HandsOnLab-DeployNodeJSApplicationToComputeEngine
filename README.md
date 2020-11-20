@@ -1,4 +1,7 @@
-# node-hello-world
+![DSC FPTU HCMC](/assets/images/dsc-fptu-hcmc/DSC_FPT_University_HCMC_Horizontal_Logo.png)
+
+### Hand-on lab
+# Deploy NodeJS Application to Google Compute Engine
 A hello world server-side application powered by NodeJS
 
 # Lab: Deploy NodeJS application to Compute Engine
@@ -132,3 +135,4 @@ PM2 is a production process manager for Node. js applications with a built-in lo
 1. At the top of the instance's details page, click Delete.
 
 # Thank you!
+![DSC FPTU HCMC](/assets/images/dsc-fptu-hcmc/HOME_PAGE_BANNERS.png)
